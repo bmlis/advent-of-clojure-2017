@@ -24,7 +24,7 @@
 (defn find-divisible
   [[head & tail]]
   (let [divisor (first (filter #(zero? (mod head %)) tail))]
-    (if (or divisor (empty? tail))
+    (if divisor
       (/ head divisor)
       (recur tail))))
 
