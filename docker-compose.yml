@@ -10,4 +10,4 @@ services:
       - "4101:4101" # http
     volumes:
       - ".:${PWD}"
-      - ~/.lein:/home/h3ra/.lein:ro
+      - /home/h3ra/.lein:/root/.lein:ro
